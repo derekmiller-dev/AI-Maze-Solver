@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Maze Solver</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="screen">
+    <div class="controls">
+      <button id="generate-maze">Generate Maze</button>
+      <button id="generate-map">Generate Map</button>
+      <select id="vehicle">
+          <option value="car">Car</option>
+          <option value="boat">Boat</option>
+          <option value="airplane">Airplane</option>
+          <option value="offroad_truck">Off-Road Truck</option>
+          <option value="snowmobile">Snowmobile</option>
+          <option value="dune_buggy">Dune Buggy</option>
+      </select>
+      <button id="start-map">Start Map - Q Learning</button>
+      <button id="start">Start</button>
+      <label for="algorithm">Algorithm:</label>
+      <select id="algorithm">
+          <option value="bfs">BFS</option>
+          <option value="dfs">DFS</option>
+          <option value="greedy search manhattan">Greedy Search Manhattan</option>
+          <option value="greedy search euclidean">Greedy Search Euclidean</option>
+          <option value="ucs">UCS</option>
+          <option value="q-learning">Q-Learning</option>
+      </select>
+      <button id="reset">Reset Maze</button>
+      <button id="reset-map">Reset Map</button>
+      <label for="mazeSize">Maze Size:</label>
+      <select id="mazeSize">
+          <option value="5">5x5</option>
+          <option value="9">9x9</option>
+          <option value="15">15x15</option>
+          <option value="25">25x25</option>
+      </select>
+    </div>
+    <div class="maze">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
